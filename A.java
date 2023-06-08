@@ -1,21 +1,13 @@
-class B{
-A obj;
-B(A obj){
-this.obj=obj;
-}
-void display(){
-System.out.println(obj.data);
-}
-}
 class A{
-int data=10;
-A(){
-B b=new B(this);
-b.display();
+void m(){System.out.println("hello m");}
+void n(){
+System.out.println("hello n");
+this.m();
 }
+}
+class TestThis4{
 public static void main(String args[]){
 A a=new A();
+a.n();
 }
 }
-
-

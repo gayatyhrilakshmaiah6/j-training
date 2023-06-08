@@ -1,21 +1,12 @@
 class B{
-A obj;
-B(A obj){
-this.obj=obj;
-}
-void display(){
-System.out.println(obj.data);
+B(){System.out.println("hello b");}
+B(int x){
+this();
+System.out.println(x);
 }
 }
-class A{
-int data=10;
-A(){
-B b=new B(this);
-b.display();
-}
+class TestThis5{
 public static void main(String args[]){
-A a=new A();
+B b=new B(10);
 }
 }
-
-
